@@ -1,0 +1,250 @@
+{
+  "info": {
+    "_postman_id": "e0f0aa05-b3c1-41c7-a45e-673db6e92614",
+    "name": "Day5",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "17761931"
+  },
+  "item": [
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7005/api/users/signup",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "users", "signup"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"john@example.com\",\r\n    \"password\": \"password123\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:7005/api/users/login",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "users", "login"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Order",
+      "item": [
+        {
+          "name": "create",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"totalPrice\": 50, \r\n    \"items\": [\"6612086f4501088b76d04d42\"] \r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:7005/api/orders",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "orders"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getAll",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7005/api/items",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7005/api/items/6612086f4501088b76d04d42",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items", "6612086f4501088b76d04d42"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"price\": 12.99\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:7005/api/items/6612086f4501088b76d04d42",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items", "6612086f4501088b76d04d42"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7005/api/items/6612086f4501088b76d04d42",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items", "6612086f4501088b76d04d42"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Item",
+      "item": [
+        {
+          "name": "create Copy",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:7005/api/items",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getAll Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7005/api/items",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get Copy",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7005/api/items/6612086f4501088b76d04d42",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items", "6612086f4501088b76d04d42"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update Copy",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"price\": 12.99\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:7005/api/items/6612086f4501088b76d04d42",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items", "6612086f4501088b76d04d42"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete Copy",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:7005/api/items/6612086f4501088b76d04d42",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "7005",
+              "path": ["api", "items", "6612086f4501088b76d04d42"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
